@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rolador de Dados</title>
+</head>
+<body>
+    <div>
+        <header>
+            DICE ROLL
+        </header>
+    </div>
+    <div class="container">
+        <h1 class="d6"><img src="assets/Dice.png" id="d6img"></h1>
+        <h2>INSERT QTD</h2>
+        <input type="number" id="number" max="17" min="0" maxlength="17">
+        
+        <button id="rollD6">ROLL</button>
+        <!-- <img src="unnamed.png" id="rollpx"> -->
+        <h3 class="result" id="">SUM</h3>
+        <h3 class="dados" id="hidden">teste</h3>
+        <div class="container">
+            <canvas id="showdice" width="720" height="80" style="border:1px solid #000000">
+                    <!-- <img src="unnamed.png" id="rollpx"> -->
+                </canvas>
+        </div>
+        <h4 class="sort" id="hidden2"><img src="assets/sort_up.png" id="sortup"><img src="assets/sort_down.png" id="sortdown"></h4>
+        <!-- <h4 class="sort2" id="hidden2"><img src="sort_down.png" id="sortdown"></h4> -->
+        
+    </div>
+    <div>
+        <img width="50px" src="assets/d6-1.png" class="imagedice" id="hidden2">
+        <img width="50px" src="assets/d6-1.png" class="image-dice-fixed" id="hidden2">
+        <img width="50px" src="assets/d6-2.png" class="image-dice-fixed" id="hidden2">
+        <img width="50px" src="assets/d6-3.png" class="image-dice-fixed" id="hidden2">
+        <img width="50px" src="assets/d6-4.png" class="image-dice-fixed" id="hidden2">
+        <img width="50px" src="assets/d6-5.png" class="image-dice-fixed" id="hidden2">
+        <img width="50px" src="assets/d6-6.png" class="image-dice-fixed" id="hidden2">
+    </div>
+    
+    
+        <script src="script.js"></script>
+</body>
+
+</html>
