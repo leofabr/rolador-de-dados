@@ -11,6 +11,7 @@ a {
 
 html {
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 body {
@@ -18,7 +19,7 @@ body {
   height: 100vh;
 
   background: linear-gradient(to top left, #2b2a29, #c1bdb8);
-  overflow: hidden;
+  
 }
 
 header {
