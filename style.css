@@ -10,12 +10,11 @@ a {
 }
 
 html {
-  /*scroll-behavior: smooth;*/
+  scroll-behavior: smooth;
   overflow: hidden;
 }
 
 body {
-  position: fixed;
   font-family: "Nunito", sans-serif;
   height: 100vh;
 
