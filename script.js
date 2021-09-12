@@ -18,11 +18,12 @@ const img = document.querySelector('#d6img');
 
 let sum  = 0;
 let num = [];
-let imgW = 35;
-let imgH = 35;
-let imgY  = 20;
+let imgW = 23;
+let imgH = 23;
+let imgY  = 12;
 let checkImg = [0,1,2,3,4,5];
 let i = 1
+let canvasWidth = 50;
 
 // Left Selector Button
 
@@ -64,27 +65,30 @@ rightButton.addEventListener('click', function (){
 button.addEventListener ('click', function (){
 
     ctx.clearRect(0,0,showDice.clientWidth,showDice.height)
+    canvasWidth=50;
+    showDice.width=canvasWidth;
         sum  = 0;
         num = [];
-        let canvasWidth = 0;
         let number = document.getElementById("number").value;
+        canvasWidth *= number;
+        showDice.width = canvasWidth - (Math.PI*3*number);
         if(number <= 0 || number>17) {
             alert(`Please enter a value between 1 and 17`);
             ctx.clearRect(0,0,showDice.clientWidth,showDice.height);
-            canvasWidth = 0;
+            canvasWidth = 50;
+            showDice.width = canvasWidth
             // break;
         }else
         {    for(let i = 0; i < number; i++) {
-                let imgX  = 20 + (i * 40);
+                let imgX  = 10 + (i * 40);
                 num[i] = Math.trunc((Math.random() * 6) + 1);
                 image.src=`assets/d6-${num[i]}.png`;
                 sum += num[i];
-                canvasWidth += imgX
                 ctx.drawImage(image, imgX, imgY, imgW, imgH);
             }
         
         }
-        document.querySelector('canvas').width = canvasWidth;
+        // document.querySelector('canvas').width = canvasWidth;
         
         
         result.id=``;

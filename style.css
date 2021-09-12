@@ -19,7 +19,6 @@ body {
   height: 100vh;
 
   background: linear-gradient(to top left, #2b2a29, #c1bdb8);
-  
 }
 
 header {
@@ -62,10 +61,10 @@ h3 {
   padding-left: 2rem;
 }
 #sortup {
-  width: 50px;
+  width: 1rem;
 }
 #sortdown {
-  width: 50px;
+  width: 1rem;
 }
 
 #hidden {
