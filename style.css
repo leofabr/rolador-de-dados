@@ -15,6 +15,7 @@ html {
 }
 
 body {
+  position: fixed;
   font-family: "Nunito", sans-serif;
   height: 100vh;
 
